@@ -341,7 +341,11 @@ function App() {
                         <p>Founding Member</p>
                       </div>
                       <div className="member-card">
-                        <img src={logo} alt="Founder 4" className="member-img" />
+                        <img
+                          src={logo}
+                          alt="Founder 4"
+                          className="member-img"
+                        />
                         <h3>Yatharth</h3>
                         <p>Founding Member</p>
                       </div>

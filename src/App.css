@@ -186,22 +186,22 @@ HEADER .header-title {
   }
 
   /* ================================= */
-/* HEADER */
-/* ================================= */
-Header {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  color: var(--primary-color);
-  margin-top: 130px;
-  margin-bottom: 5px;
-  letter-spacing: 1.5px;
-}
-HEADER .header-title {
-  font-size: 1rem;
-  display: inline; /* Keep text and cursor on the same line */
-  white-space: nowrap; /* Prevent line break */
-}
+  /* HEADER */
+  /* ================================= */
+  Header {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: var(--primary-color);
+    margin-top: 130px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+  }
+  HEADER .header-title {
+    font-size: 1rem;
+    display: inline; /* Keep text and cursor on the same line */
+    white-space: nowrap; /* Prevent line break */
+  }
 
   .nav-links.active {
     display: flex; /* Show when toggled */
@@ -228,7 +228,6 @@ HEADER .header-title {
     display: block; /* Show when parent dropdown is active */
   }
 }
-
 
 /* ================================= */
 /* SLIDER SECTION */
@@ -428,7 +427,7 @@ HEADER .header-title {
   color: #1e1e2f; /* Dark background = Light text, Light button = Dark text */
 }
 .dark-mode .logo {
-  filter: invert(.567);
+  filter: invert(0.567);
 }
 
 .dark-mode .link-btn:hover {
@@ -440,7 +439,6 @@ HEADER .header-title {
   background: var(--gold-accent);
   color: #1e1e2f;
 }
-
 
 .link-btn:hover {
   background: var(--gold-accent);
@@ -473,6 +471,14 @@ HEADER .header-title {
 }
 
 .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--gold-accent);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.dept-content h2 {
   font-size: 18px;
   margin-bottom: 10px;
   border-bottom: 2px solid var(--gold-accent);
@@ -857,7 +863,6 @@ HEADER .header-title {
   --gold-accent: #ffb400;
   --dark-text: #f8f8f8; /* much lighter */
 }
-
 
 /* Navbar */
 .dark-mode .navbar {

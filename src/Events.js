@@ -43,7 +43,6 @@ function Events() {
 
       {/* Book Exchange Event - Right */}
       <div className="event-container right">
-        
         <div className="event-text">
           <h2>Book Exchange Event</h2>
           <p className="event-date">Date TBD</p>

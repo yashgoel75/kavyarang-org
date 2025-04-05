@@ -5,7 +5,9 @@ import "./JoinUs.css";
 function JoinUs() {
   const auditionStartDate = new Date("2025-12-12T00:00:00");
   const currentDate = new Date();
-  const [isAuditionLive, setIsAuditionLive] = useState(currentDate >= auditionStartDate);
+  const [isAuditionLive, setIsAuditionLive] = useState(
+    currentDate >= auditionStartDate
+  );
 
   const [formData, setFormData] = useState({
     name: "",
@@ -37,7 +39,8 @@ function JoinUs() {
     <section className="join-us-section fade-in">
       <h1>Join KavyaRang</h1>
       <p className="intro-text">
-        Unleash your literary soul and weave your story into our tapestry of words!
+        Unleash your literary soul and weave your story into our tapestry of
+        words!
       </p>
 
       <div className="audition-info">
@@ -46,7 +49,8 @@ function JoinUs() {
           <strong>Auditions Begin:</strong> December 12, 2025
         </p>
         <p>
-          <strong>Eligibility:</strong> Open to all BTech students in their 1st or 2nd year
+          <strong>Eligibility:</strong> Open to all BTech students in their 1st
+          or 2nd year
         </p>
         <p className={`status ${isAuditionLive ? "live" : "not-live"}`}>
           {isAuditionLive

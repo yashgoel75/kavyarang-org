@@ -4,7 +4,7 @@ import logo from "./kavyarang-logo.png";
 
 import presidentImg from "./president1.jpg";
 import vicePresidentImg from "./VicePresident1.jpg";
-import head1Img from "./management1.jpg"; 
+import head1Img from "./management1.jpg";
 import head2Img from "./management2.jpg";
 import creative1Img from "./creative1.png";
 import creative2Img from "./creative2.jpg";
@@ -15,7 +15,8 @@ function Team() {
     <section className="team-section fade-in">
       <h1>Meet Our Team</h1>
       <p className="intro-text">
-        The heartbeat of KavyaRang — a symphony of talent, passion, and literary brilliance.
+        The heartbeat of KavyaRang — a symphony of talent, passion, and literary
+        brilliance.
       </p>
 
       {/* Leadership Section */}
@@ -28,7 +29,11 @@ function Team() {
             <p>President</p>
           </div>
           <div className="member-card leadership-card">
-            <img src={vicePresidentImg} alt="Vice President" className="member-img" />
+            <img
+              src={vicePresidentImg}
+              alt="Vice President"
+              className="member-img"
+            />
             <h3>Devansh Bansal</h3>
             <p>Vice President</p>
           </div>
@@ -44,12 +49,20 @@ function Team() {
             <h3>Management Heads</h3>
             <div className="members-container">
               <div className="member-card">
-                <img src={head1Img} alt="Management Head 1" className="member-img" />
+                <img
+                  src={head1Img}
+                  alt="Management Head 1"
+                  className="member-img"
+                />
                 <h4>Aparna Singh</h4>
                 <p>Management Head</p>
               </div>
               <div className="member-card">
-                <img src={head2Img} alt="Management Head 2" className="member-img" />
+                <img
+                  src={head2Img}
+                  alt="Management Head 2"
+                  className="member-img"
+                />
                 <h4>Arnav</h4>
                 <p>Management Head</p>
               </div>
@@ -61,12 +74,20 @@ function Team() {
             <h3>Creative Heads</h3>
             <div className="members-container">
               <div className="member-card">
-                <img src={creative1Img} alt="Creative Head 1" className="member-img" />
+                <img
+                  src={creative1Img}
+                  alt="Creative Head 1"
+                  className="member-img"
+                />
                 <h4>Bhavesh Gupta</h4>
                 <p>Creative Head</p>
               </div>
               <div className="member-card">
-                <img src={creative2Img} alt="Creative Head 2" className="member-img" />
+                <img
+                  src={creative2Img}
+                  alt="Creative Head 2"
+                  className="member-img"
+                />
                 <h4>Nandani Daga</h4>
                 <p>Creative Head</p>
               </div>
@@ -78,7 +99,11 @@ function Team() {
             <h3>Social Media Heads</h3>
             <div className="members-container">
               <div className="member-card">
-                <img src={socialImg} alt="Social Media Head 1" className="member-img" />
+                <img
+                  src={socialImg}
+                  alt="Social Media Head 1"
+                  className="member-img"
+                />
                 <h4>Gaurav Dev Pandey</h4>
                 <p>Social Media Head</p>
               </div>

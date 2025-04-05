@@ -1,210 +1,179 @@
 /* JoinUs.css */
 .join-us-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto 20px auto;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-  }
-  
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.join-us-section h1 {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #642c7a; /* --primary-color */
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  font-style: italic;
+  color: #3e1f47; /* --dark-text */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(100, 44, 122, 0.1); /* Subtle shadow for depth */
+}
+
+.audition-info h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #642c7a;
+  margin-bottom: 15px;
+}
+
+.audition-info p {
+  font-size: 16px;
+  color: #3e1f47;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status.live {
+  color: #642c7a;
+  background: rgba(255, 180, 0, 0.1); /* Subtle gold glow */
+}
+
+.status.not-live {
+  color: #888;
+  background: rgba(0, 0, 0, 0.05); /* Faint gray */
+}
+
+.explore-dept {
+  font-size: 16px;
+  color: #3e1f47;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.dept-link {
+  color: #642c7a; /* --primary-color */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 1px dashed #d98db4; /* --secondary-color */
+}
+
+.dept-link:hover {
+  color: #ffb400; /* --gold-accent */
+  border-bottom: 1px solid #ffb400;
+}
+
+.audition-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.audition-form h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #642c7a;
+  margin-bottom: 15px;
+}
+
+.audition-form input,
+.audition-form select {
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  border: 1px solid #d98db4; /* --secondary-color */
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+.audition-form input:focus,
+.audition-form select:focus {
+  border-color: #642c7a;
+  outline: none;
+}
+
+.audition-form input[type="file"] {
+  padding: 5px;
+}
+
+.audition-form button {
+  padding: 10px 20px;
+  background: #642c7a; /* --primary-color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.audition-form button:hover:not(:disabled) {
+  background: #ffb400; /* --gold-accent */
+  transform: scale(1.05); /* Slight scale for interactivity */
+}
+
+.audition-form.inactive {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.audition-form.active {
+  filter: none;
+  opacity: 1;
+}
+
+.audition-form input:disabled,
+.audition-form select:disabled,
+.audition-form button:disabled {
+  cursor: not-allowed;
+  background: #ccc;
+  color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .join-us-section h1 {
-    font-size: 36px;
-    font-family: "Playfair Display", serif;
-    color: #642c7a; /* --primary-color */
-    margin-bottom: 20px;
+    font-size: 28px;
   }
-  
-  .intro-text {
-    font-size: 18px;
-    font-style: italic;
-    color: #3e1f47; /* --dark-text */
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(100, 44, 122, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .audition-info h2 {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    color: #642c7a;
-    margin-bottom: 15px;
-  }
-  
-  .audition-info p {
-    font-size: 16px;
-    color: #3e1f47;
-    margin-bottom: 10px;
-  }
-  
-  .status {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .status.live {
-    color: #642c7a;
-    background: rgba(255, 180, 0, 0.1); /* Subtle gold glow */
-  }
-  
-  .status.not-live {
-    color: #888;
-    background: rgba(0, 0, 0, 0.05); /* Faint gray */
-  }
-  
+
+  .intro-text,
+  .audition-info p,
   .explore-dept {
-    font-size: 16px;
-    color: #3e1f47;
-    margin-top: 20px;
-    font-style: italic;
+    font-size: 14px;
   }
-  
-  .dept-link {
-    color: #642c7a; /* --primary-color */
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 1px dashed #d98db4; /* --secondary-color */
-  }
-  
-  .dept-link:hover {
-    color: #ffb400; /* --gold-accent */
-    border-bottom: 1px solid #ffb400;
-  }
-  
-  .audition-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 30px auto;
-  }
-  
+
+  .audition-info h2,
   .audition-form h2 {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    color: #642c7a;
-    margin-bottom: 15px;
+    font-size: 20px;
   }
-  
-  .audition-form input,
-  .audition-form select {
-    padding: 10px;
+
+  .status {
     font-size: 16px;
-    font-family: "Lora", serif;
-    border: 1px solid #d98db4; /* --secondary-color */
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);
-    transition: border-color 0.3s ease;
-  }
-  
-  .audition-form input:focus,
-  .audition-form select:focus {
-    border-color: #642c7a;
-    outline: none;
-  }
-  
-  .audition-form input[type="file"] {
-    padding: 5px;
-  }
-  
-  .audition-form button {
-    padding: 10px 20px;
-    background: #642c7a; /* --primary-color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .audition-form button:hover:not(:disabled) {
-    background: #ffb400; /* --gold-accent */
-    transform: scale(1.05); /* Slight scale for interactivity */
-  }
-  
-  .audition-form.inactive {
-    filter: grayscale(100%);
-    opacity: 0.7;
-  }
-  
-  .audition-form.active {
-    filter: none;
-    opacity: 1;
-  }
-  
-  .audition-form input:disabled,
-  .audition-form select:disabled,
-  .audition-form button:disabled {
-    cursor: not-allowed;
-    background: #ccc;
-    color: #666;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .join-us-section h1 {
-      font-size: 28px;
-    }
-  
-    .intro-text,
-    .audition-info p,
-    .explore-dept {
-      font-size: 14px;
-    }
-  
-    .audition-info h2,
-    .audition-form h2 {
-      font-size: 20px;
-    }
-  
-    .status {
-      font-size: 16px;
-    }
-  
-    .audition-form {
-      max-width: 100%;
-    }
   }
 
-  /* Dark Mode for Team Section */
-.dark-mode .team-section {
-  background: rgba(30, 30, 30, 0.95);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  .audition-form {
+    max-width: 100%;
+  }
 }
 
-.dark-mode .team-section h1,
-.dark-mode .leadership h2,
-.dark-mode .heads h2,
-.dark-mode .dept-group h3,
-.dark-mode .leadership-card h3,
-.dark-mode .member-card h4 {
-  color: #bb86fc; /* Soft lavender shade for headings */
-}
-
-.dark-mode .intro-text,
-.dark-mode .leadership-card p,
-.dark-mode .member-card p {
-  color: #ccc;
-}
-
-.dark-mode .leadership-card,
-.dark-mode .member-card {
-  background: rgba(50, 50, 50, 0.3);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
-}
-
-.dark-mode .member-img {
-  border-color: #ffb400; /* Keep gold accent on profile pics */
-}
-
-/* 🌙 Dark Mode for Join Us Section */
+/* Dark Mode for Join Us Section */
 .dark-mode .join-us-section {
   background: rgba(30, 30, 30, 0.95);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
@@ -213,55 +182,55 @@
 .dark-mode .join-us-section h1,
 .dark-mode .audition-info h2,
 .dark-mode .audition-form h2 {
-  color: #bb86fc;
+  color: #f0e6f6; /* White-ish, matching Contact.css and updated Team.css */
 }
 
 .dark-mode .intro-text,
 .dark-mode .audition-info p,
 .dark-mode .status,
 .dark-mode .explore-dept {
-  color: #ccc;
+  color: #ccc; /* Light gray for text */
 }
 
 .dark-mode .status.live {
   background: rgba(255, 180, 0, 0.1);
-  color: #ffb400;
+  color: #ffb400; /* Gold for live status */
 }
 
 .dark-mode .status.not-live {
   background: rgba(255, 255, 255, 0.05);
-  color: #888;
+  color: #888; /* Gray for not-live */
 }
 
 .dark-mode .dept-link {
-  color: #bb86fc;
-  border-bottom: 1px dashed #bb86fc;
+  color: #f0e6f6; /* White-ish for links to match headings */
+  border-bottom: 1px dashed #bb86fc; /* Keep purplish accent */
 }
 
 .dark-mode .dept-link:hover {
-  color: #ffb400;
+  color: #ffb400; /* Gold on hover */
   border-bottom: 1px solid #ffb400;
 }
 
 .dark-mode .audition-form input,
 .dark-mode .audition-form select {
   background: rgba(50, 50, 50, 0.9);
-  border-color: #bb86fc;
-  color: #f0e6f6;
+  border-color: #bb86fc; /* Purplish border */
+  color: #f0e6f6; /* White-ish text inside inputs */
 }
 
 .dark-mode .audition-form input:focus,
 .dark-mode .audition-form select:focus {
-  border-color: #ffb400;
+  border-color: #ffb400; /* Gold on focus */
 }
 
 .dark-mode .audition-form button {
-  background: #bb86fc;
-  color: #1a1a1a;
+  background: #bb86fc; /* Purplish button */
+  color: #1a1a1a; /* Dark text for contrast */
 }
 
 .dark-mode .audition-form button:hover:not(:disabled) {
-  background: #ffb400;
+  background: #ffb400; /* Gold on hover */
 }
 
 .dark-mode .audition-form input:disabled,
@@ -269,4 +238,18 @@
 .dark-mode .audition-form button:disabled {
   background: #444;
   color: #999;
+}
+
+/* Remove conflicting Team-specific dark mode styles */
+.dark-mode .team-section,
+.dark-mode .leadership h2,
+.dark-mode .heads h2,
+.dark-mode .dept-group h3,
+.dark-mode .leadership-card h3,
+.dark-mode .member-card h4,
+.dark-mode .leadership-card,
+.dark-mode .member-card,
+.dark-mode .member-img {
+  /* These rules don’t belong in JoinUs.css; they’re already in Team.css */
+  /* Removed to avoid confusion */
 }

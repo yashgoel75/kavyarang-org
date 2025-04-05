@@ -60,7 +60,9 @@ function Collaborate() {
         </p>
         <p>
           <strong>Email:</strong>{" "}
-          <a href="mailto:collaborate@kavyarang.org">collaborate@kavyarang.org</a>
+          <a href="mailto:collaborate@kavyarang.org">
+            collaborate@kavyarang.org
+          </a>
         </p>
         <p>
           <strong>Instagram:</strong>{" "}
