@@ -8,6 +8,7 @@ import vicePresidentImg from "./VicePresident1.jpg"; // Vaibhav Wadhwa
 import head1Img from "./management1.jpg"; 
 import head2Img from "./management2.jpg"; // Reuse for demo
 import creative1Img from "./creative1.png"; // Reuse for demo
+import creative2Img from "./creative2.jpg";
 import socialImg from "./social.jpg";
 
 function Team() {
@@ -66,7 +67,7 @@ function Team() {
                 <p>Creative Head</p>
               </div>
               <div className="member-card">
-                <img src={logo} alt="Creative Head 2" className="member-img" />
+                <img src={creative2Img} alt="Creative Head 2" className="member-img" />
                 <h4>Nandani Daga</h4>
                 <p>Creative Head</p>
               </div>
