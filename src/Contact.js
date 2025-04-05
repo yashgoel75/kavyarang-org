@@ -56,7 +56,7 @@ function Contact() {
         </p>
         <p>
           <strong>Email:</strong>{" "}
-          <a href="mailto:kavyarang@email.com">kavyarang@email.com</a>
+          <a href="mailto:connect@kavyarang.org">connect@kavyarang.org</a>
         </p>
         <p>
           <strong>Instagram:</strong>{" "}
