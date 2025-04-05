@@ -262,6 +262,8 @@ function App() {
                 </li>
               </ul>
             </li>
+          </ul>
+          <ul>
             <li className="theme-toggle">
               <span className="toggle-label">☀️</span>
               <label className="switch">
