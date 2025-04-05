@@ -876,10 +876,11 @@ HEADER .header-title {
   color: var(--secondary-color);
 }
 
-.dark-mode .nav-links {
-  background-color: var(--background-light);
+@media (max-width: 768px) {
+  .dark-mode .nav-links {
+    background-color: var(--background-light);
+  }
 }
-
 /* Dropdown Menu */
 .dark-mode .dropdown-menu {
   background: rgba(60, 40, 80, 0.95);
