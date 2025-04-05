@@ -59,7 +59,7 @@ function JoinUs() {
         </p>
         <p className="explore-dept">
           In the meanwhile, let your curiosity dance through{" "}
-          <Link to="/departments" className="dept-link">
+          <Link to="/departments/management" className="dept-link">
             our vibrant departments
           </Link>
           — discover where your passion finds its home!
