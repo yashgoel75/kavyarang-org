@@ -1,0 +1,178 @@
+    /* Team.css */
+.team-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .team-section h1 {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    color: #642c7a; /* --primary-color */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(100, 44, 122, 0.1);
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #3e1f47; /* --dark-text */
+    margin-bottom: 40px;
+  }
+  
+  /* Leadership Section */
+  .leadership h2 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    color: #642c7a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffb400; /* --gold-accent */
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .leadership-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .leadership-card {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .leadership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .member-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #ffb400; /* --gold-accent */
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .leadership-card h3 {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: #642c7a;
+    font-weight: 600;
+  }
+  
+  .leadership-card p {
+    font-size: 16px;
+    color: #3e1f47;
+  }
+  
+  /* Heads Section */
+  .heads h2 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    color: #642c7a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #d98db4; /* --secondary-color */
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .heads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .dept-group h3 {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: #642c7a;
+    margin-bottom: 20px;
+  }
+  
+  .members-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .member-card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .member-card h4 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #642c7a;
+    font-weight: 600;
+  }
+  
+  .member-card p {
+    font-size: 14px;
+    color: #3e1f47;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .team-section h1 {
+      font-size: 28px;
+    }
+  
+    .intro-text {
+      font-size: 16px;
+    }
+  
+    .leadership h2,
+    .heads h2 {
+      font-size: 24px;
+    }
+  
+    .leadership-card {
+      width: 250px;
+    }
+  
+    .member-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .leadership-card h3,
+    .dept-group h3 {
+      font-size: 18px;
+    }
+  
+    .leadership-card p,
+    .member-card p {
+      font-size: 14px;
+    }
+  
+    .member-card h4 {
+      font-size: 18px;
+    }
+  
+    .member-card {
+      width: 220px;
+    }
+  }
