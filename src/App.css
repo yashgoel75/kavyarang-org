@@ -880,12 +880,17 @@ HEADER .header-title {
   .dark-mode .nav-links {
     background-color: var(--background-light);
   }
+  .dark-mode .dropdown-menu {
+    background-color: var(--background-light) !important;
+  }
 }
 /* Dropdown Menu */
 .dark-mode .dropdown-menu {
   background-color: rgba(60, 40, 80, 0.95);
 }
-
+.dark-mode .dropdown-menu .dropdown {
+  background-color: var(--background-light);
+}
 /* Cards and Sections */
 .dark-mode .member-card,
 .dark-mode .link-card,
