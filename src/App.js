@@ -5,6 +5,7 @@ import {
   Routes,
   Link,
   useLocation,
+  useParams,
 } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
@@ -37,14 +38,93 @@ function ScrollToTop() {
   return null;
 }
 
-// Departments Component (unchanged, kept for completeness)
+// Departments Component with Dynamic Routing
 function Departments() {
   const departments = [
-    // ... (your existing departments array remains unchanged)
+    {
+      name: "Management",
+      slug: "management",
+      description:
+        "The Management Department ensures the smooth operation and strategic direction of Kavyarang.",
+      roles: [
+        "Plan and organize society events and meetings.",
+        "Coordinate between departments for seamless execution.",
+        "Manage budgets and resources effectively.",
+        "Oversee membership recruitment and retention.",
+        "Represent the society in institutional matters.",
+      ],
+      importance:
+        "This department is the backbone of the society, providing leadership and structure.",
+    },
+    {
+      name: "Creative",
+      slug: "creative",
+      description:
+        "The Creative Department brings the literary vision to life through art, writing, and innovation.",
+      roles: [
+        "Develop content for events, such as poetry and stories.",
+        "Design posters, flyers, and other promotional materials.",
+        "Curate themes for literary competitions and workshops.",
+        "Collaborate on creative projects like anthologies.",
+        "Inspire members with innovative ideas.",
+      ],
+      importance:
+        "A literary society thrives on creativity. This department fuels imagination.",
+    },
+    {
+      name: "Social Media",
+      slug: "social-media",
+      description:
+        "The Social Media Department amplifies Kavyarang’s presence and engagement online.",
+      roles: [
+        "Manage social media accounts (Instagram, LinkedIn, etc.).",
+        "Create and schedule posts about events and updates.",
+        "Engage with followers and respond to inquiries.",
+        "Promote events and campaigns digitally.",
+        "Analyze engagement metrics to improve outreach.",
+      ],
+      importance:
+        "In the digital age, visibility is key. This department connects Kavyarang with a broader audience.",
+    },
+    {
+      name: "Debate",
+      slug: "debate",
+      description:
+        "The Debate Department sharpens minds through argumentation and discourse.",
+      roles: [
+        "Organize debates and public speaking events.",
+        "Train members in debate techniques and rhetoric.",
+        "Research topics for discussions and competitions.",
+        "Moderate debates to ensure fair participation.",
+        "Promote critical thinking within the society.",
+      ],
+      importance:
+        "Debate enriches a literary society by fostering intellectual growth and eloquence.",
+    },
+    {
+      name: "Web Development",
+      slug: "web-development",
+      description:
+        "The Web Development Department maintains Kavyarang’s digital home.",
+      roles: [
+        "Design and update the society’s website.",
+        "Ensure the site is user-friendly and visually appealing.",
+        "Fix technical issues and bugs promptly.",
+        "Add new features like event registration or galleries.",
+        "Collaborate with other departments for content integration.",
+      ],
+      importance:
+        "A strong online presence is vital for accessibility and professionalism.",
+    },
   ];
 
-  const [currentDeptIndex, setCurrentDeptIndex] = useState(0);
+  const { deptSlug } = useParams(); // Get the slug from URL
   const location = useLocation();
+  const [currentDeptIndex, setCurrentDeptIndex] = useState(() => {
+    // Find index based on slug, default to 0 if not found
+    const index = departments.findIndex((dept) => dept.slug === deptSlug);
+    return index !== -1 ? index : 0;
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,7 +146,9 @@ function Departments() {
     <section className="departments-section fade-in">
       <h1>Our Departments</h1>
       <div className="dept-container">
-        <button className="arrow-btn prev" onClick={handlePrev}>←</button>
+        <button className="arrow-btn prev" onClick={handlePrev}>
+          ←
+        </button>
         <div className="dept-content">
           <h2>{currentDept.name} Department</h2>
           <p className="dept-description">{currentDept.description}</p>
@@ -85,7 +167,9 @@ function Departments() {
             </div>
           </div>
         </div>
-        <button className="arrow-btn next" onClick={handleNext}>→</button>
+        <button className="arrow-btn next" onClick={handleNext}>
+          →
+        </button>
       </div>
       <p className="dept-counter">
         {currentDeptIndex + 1} of {departments.length}
@@ -95,7 +179,12 @@ function Departments() {
 }
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    if (savedMode !== null) return savedMode === "true";
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) return true;
+    return false;
+  });
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
@@ -104,7 +193,19 @@ function App() {
     } else {
       document.body.classList.remove("dark-mode");
     }
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (e) => {
+      if (!localStorage.getItem("darkMode")) {
+        setDarkMode(e.matches);
+      }
+    };
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -161,8 +262,8 @@ function App() {
                 </li>
               </ul>
             </li>
-            {/* Toggle Switch */}
-            <li>
+            <li className="theme-toggle">
+              <span className="toggle-label">☀️</span>
               <label className="switch">
                 <input
                   type="checkbox"
@@ -171,6 +272,7 @@ function App() {
                 />
                 <span className="slider"></span>
               </label>
+              <span className="toggle-label">🌙</span>
             </li>
           </ul>
         </nav>
@@ -290,7 +392,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/collaborate" element={<Collaborate />} />
-            <Route path="/departments" element={<Departments />} />
+            <Route path="/departments/:deptSlug" element={<Departments />} />
             <Route path="/join-us" element={<JoinUs />} />
             <Route path="/events" element={<Events />} />
             <Route path="/team" element={<Team />} />
@@ -311,19 +413,19 @@ function App() {
               <h3>Explore Departments</h3>
               <ul>
                 <li>
-                  <Link to="/departments">Management</Link>
+                  <Link to="/departments/management">Management</Link>
                 </li>
                 <li>
-                  <Link to="/departments">Creative</Link>
+                  <Link to="/departments/creative">Creative</Link>
                 </li>
                 <li>
-                  <Link to="/departments">Social Media</Link>
+                  <Link to="/departments/social-media">Social Media</Link>
                 </li>
                 <li>
-                  <Link to="/departments">Debate</Link>
+                  <Link to="/departments/debate">Debate</Link>
                 </li>
                 <li>
-                  <Link to="/departments">Web Development</Link>
+                  <Link to="/departments/web-development">Web Development</Link>
                 </li>
               </ul>
             </div>
