@@ -1,10 +1,10 @@
 import React from "react";
 import "./AboutUs.css";
-import founder1 from "./member1.jpg"; // Drishti Nagpal
-import founder2 from "./member2.jpg"; // Vaibhav Wadhwa
-import founder3 from "./member3.jpg"; // Hadis Khan
+import founder1 from "./member1.jpg"; 
+import founder2 from "./member2.jpg";
+import founder3 from "./member3.jpg";
 import logo from "./kavyarang-logo.png"
-import founder4 from "./member1.jpg"; // Placeholder for Yatharth (replace with actual)
+import founder4 from "./member1.jpg";
 
 function AboutUs() {
   return (

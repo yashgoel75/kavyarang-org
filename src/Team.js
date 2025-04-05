@@ -2,12 +2,11 @@ import React from "react";
 import "./Team.css";
 import logo from "./kavyarang-logo.png";
 
-// Placeholder images (reuse from App.js or replace with actual ones)
-import presidentImg from "./president1.jpg"; // Drishti Nagpal
-import vicePresidentImg from "./VicePresident1.jpg"; // Vaibhav Wadhwa
+import presidentImg from "./president1.jpg";
+import vicePresidentImg from "./VicePresident1.jpg";
 import head1Img from "./management1.jpg"; 
-import head2Img from "./management2.jpg"; // Reuse for demo
-import creative1Img from "./creative1.png"; // Reuse for demo
+import head2Img from "./management2.jpg";
+import creative1Img from "./creative1.png";
 import creative2Img from "./creative2.jpg";
 import socialImg from "./social.jpg";
 

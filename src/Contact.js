@@ -20,19 +20,18 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS send function
     emailjs
       .send(
-        "service_odesacd", // Replace with your Service ID (e.g., service_xxxxxxx)
-        "template_acqr4uc", // Replace with your Contact Template ID (e.g., template_xxxxxxx)
+        "service_odesacd", // service_id
+        "template_acqr4uc", // template_id
         formData,
-        "JqrTqeIn4fFoo6PAX" // Replace with your User ID (e.g., user_xxxxxxx)
+        "JqrTqeIn4fFoo6PAX" // public_id
       )
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);
           alert("Thank you for reaching out! We’ll get back to you soon.");
-          setFormData({ name: "", email: "", message: "" }); // Reset form
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.error("Email sending failed:", error.text);

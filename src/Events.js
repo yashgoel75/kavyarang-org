@@ -1,10 +1,6 @@
 import React from "react";
 import "./Events.css";
-// Placeholder images - replace with actual event photos
-import poetryDayImg1 from "./IMG_3380.png"; // JAM Competition
-import poetryDayImg2 from "./creative1.jpg"; // Poetry Board
-import bookExchangeImg1 from "./creative1.jpg"; // Book swapping
-import bookExchangeImg2 from "./creative1.jpg"; // Sharing experiences
+import poetryDayImg1 from "./IMG_3380.png";
 
 function Events() {
   return (

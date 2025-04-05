@@ -5,7 +5,6 @@ const Header = () => {
   const titleRef = useRef(null);
 
   useEffect(() => {
-    // Title Typing Effect
     const typedTitle = new Typed(titleRef.current, {
       strings: [
         "KavyaRang - The Literary Society of VIPS-TC",

@@ -128,6 +128,24 @@ body {
   display: block;
 }
 
+/* ================================= */
+/* HEADER */
+/* ================================= */
+Header {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: var(--primary-color);
+  margin-top: 130px;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+HEADER .header-title {
+  font-size: 2rem;
+  display: inline; /* Keep text and cursor on the same line */
+  white-space: nowrap; /* Prevent line break */
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
@@ -150,6 +168,24 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
+
+  /* ================================= */
+/* HEADER */
+/* ================================= */
+Header {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: var(--primary-color);
+  margin-top: 130px;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+HEADER .header-title {
+  font-size: 1rem;
+  display: inline; /* Keep text and cursor on the same line */
+  white-space: nowrap; /* Prevent line break */
+}
 
   .nav-links.active {
     display: flex; /* Show when toggled */
@@ -177,23 +213,7 @@ body {
   }
 }
 
-/* ================================= */
-/* HEADER */
-/* ================================= */
-Header {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  color: var(--primary-color);
-  margin-top: 130px;
-  margin-bottom: 5px;
-  letter-spacing: 1.5px;
-}
-HEADER .header-title {
-  font-size: 2rem;
-  display: inline; /* Keep text and cursor on the same line */
-  white-space: nowrap; /* Prevent line break */
-}
+
 /* ================================= */
 /* SLIDER SECTION */
 /* ================================= */

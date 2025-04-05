@@ -24,10 +24,10 @@ function Collaborate() {
 
     emailjs
       .send(
-        "service_odesacd", // Replace with your Service ID (e.g., service_xxxxxxx)
-        "template_jn9w6px", // Replace with your Collaborate Template ID (e.g., template_yyyyyyy)
+        "service_odesacd", // service_id
+        "template_jn9w6px", // template_id
         formData,
-        "JqrTqeIn4fFoo6PAX" // Replace with your User ID (e.g., user_xxxxxxx)
+        "JqrTqeIn4fFoo6PAX" // public_id
       )
       .then(
         (result) => {
@@ -35,7 +35,7 @@ function Collaborate() {
           alert(
             "Thank you for your collaboration request! We’ll respond soon."
           );
-          setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+          setFormData({ name: "", email: "", subject: "", message: "" });
         },
         (error) => {
           console.error("Email sending failed:", error.text);
