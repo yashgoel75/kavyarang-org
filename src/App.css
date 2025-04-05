@@ -113,6 +113,9 @@ body {
   color: var(--gold-accent);
 }
 
+.dark-mode .nav-links li a:hover {
+  color: var(--gold-accent);
+}
 .dropdown {
   position: relative;
 }
