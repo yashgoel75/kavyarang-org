@@ -876,11 +876,17 @@ HEADER .header-title {
   color: var(--secondary-color);
 }
 
+.dark-mode .nav-links {
+  background-color: var(--background-light);
+}
+
 /* Dropdown Menu */
 .dark-mode .dropdown-menu {
   background: rgba(60, 40, 80, 0.95);
 }
 
+.dark-mode .dept-container {
+}
 /* Cards and Sections */
 .dark-mode .member-card,
 .dark-mode .link-card,
