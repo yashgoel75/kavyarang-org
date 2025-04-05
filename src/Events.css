@@ -143,3 +143,29 @@
       max-width: 100%;
     }
   }
+
+  /* 🌙 Dark Mode for Events Section */
+.dark-mode .events-section {
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .events-section h1,
+.dark-mode .event-text h2 {
+  color: #bb86fc; /* Soft lavender */
+}
+
+.dark-mode .intro-text,
+.dark-mode .event-text p,
+.dark-mode .closing-text {
+  color: #ccc;
+}
+
+.dark-mode .event-date {
+  color: #ffb400; /* Gold accent stays for highlight */
+}
+
+.dark-mode .event-img {
+  border-color: #ffb400;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}

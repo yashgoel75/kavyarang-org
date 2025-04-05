@@ -137,3 +137,35 @@
       font-size: 16px;
     }
   }
+
+ /* Dark Mode for About Us Section */
+.dark-mode .about-us-section {
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .about-us-section h1,
+.dark-mode .society-story h2,
+.dark-mode .journey h2,
+.dark-mode .aims-goals h2,
+.dark-mode .founder-card h3 {
+  color: #bb86fc; /* Soft lavender heading */
+}
+
+.dark-mode .intro-text,
+.dark-mode .society-story p,
+.dark-mode .journey p,
+.dark-mode .aims-goals p,
+.dark-mode .aims-goals li {
+  color: #ccc; /* Light text for dark backgrounds */
+}
+
+.dark-mode .founder-card {
+  background: rgba(50, 50, 50, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .founder-img {
+  border-color: #ffb400; /* Keep gold accent on profile pics */
+}
+ 

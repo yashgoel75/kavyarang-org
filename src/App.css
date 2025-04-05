@@ -32,6 +32,22 @@
   --background-light: #fdf7ff;
   --gold-accent: #ffb400;
   --dark-text: #3e1f47;
+
+  /* ADD THESE FOR DARK MODE SUPPORT */
+  --dark-bg: #1e1e2f;
+  --dark-surface: #2c2c3e;
+  --dark-navbar: #2a2a3c;
+  --dark-text-color: #f0e6ff;
+}
+
+body,
+.main-content,
+.navbar,
+.departments-section,
+.link-card,
+.member-card,
+.footer {
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Modern Background */
@@ -397,15 +413,34 @@ HEADER .header-title {
   display: inline-block;
   padding: 8px 16px;
   background: var(--primary-color);
-  color: white;
+  color: white; /* Ensure text is white by default */
   text-decoration: none;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+.dark-mode .link-btn {
+  background: var(--gold-accent); /* Make it stand out in dark */
+  color: #1e1e2f; /* Dark background = Light text, Light button = Dark text */
+}
+.dark-mode .logo {
+  filter: invert(.567);
+}
+
+.dark-mode .link-btn:hover {
+  background: #ffd366; /* Slightly brighter gold */
+  color: #1e1e2f;
+}
+
+.dark-mode .arrow-btn {
+  background: var(--gold-accent);
+  color: #1e1e2f;
+}
+
 
 .link-btn:hover {
   background: var(--gold-accent);
@@ -803,4 +838,134 @@ HEADER .header-title {
     height: 30px;
     font-size: 18px;
   }
+}
+
+/* Dark Mode Overrides */
+.dark-mode {
+  background: linear-gradient(to bottom, var(--dark-surface), var(--dark-bg));
+  color: var(--dark-text-color);
+}
+
+.dark-mode body {
+  background: none;
+  color: var(--dark-text-color);
+}
+.dark-mode {
+  --primary-color: #f0e6ff;
+  --secondary-color: #d98db4;
+  --background-light: #121212;
+  --gold-accent: #ffb400;
+  --dark-text: #f8f8f8; /* much lighter */
+}
+
+
+/* Navbar */
+.dark-mode .navbar {
+  background: rgba(40, 30, 50, 0.95);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Nav Links */
+.dark-mode .nav-links li a,
+.dark-mode .dropdown-toggle {
+  color: var(--secondary-color);
+}
+
+/* Dropdown Menu */
+.dark-mode .dropdown-menu {
+  background: rgba(60, 40, 80, 0.95);
+}
+
+/* Cards and Sections */
+.dark-mode .member-card,
+.dark-mode .link-card,
+.dark-mode .departments-section,
+.dark-mode .footer {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--dark-text-color);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.dark-mode .footer {
+  background: var(--dark-navbar);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .footer-section ul li a:hover {
+  color: var(--gold-accent);
+}
+
+/* Add to the end of App.css or within the navbar section */
+
+/* Toggle Switch Container */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icons and switch */
+}
+
+/* Toggle Labels (Sun/Moon Icons) */
+.toggle-label {
+  font-size: 16px;
+  color: #642c7a; /* Matches your primary color */
+  transition: color 0.3s ease;
+}
+
+.dark-mode .toggle-label {
+  color: #f0e6ff; /* Light text in dark mode */
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s ease;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s ease;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #642c7a; /* Purple for dark mode */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark-mode .slider {
+  background-color: #ccc;
+}
+
+.dark-mode input:checked + .slider {
+  background-color: #d98db4; /* Pink for dark mode active */
 }

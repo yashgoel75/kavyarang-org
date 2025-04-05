@@ -176,3 +176,72 @@
       width: 220px;
     }
   }
+
+  /* Dark Mode Styles */
+.dark-mode .collaborate-section,
+.dark-mode .contact-section {
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode a,
+.dark-mode input,
+.dark-mode textarea {
+  color: #f0e6f6;
+}
+
+.dark-mode .intro-text,
+.dark-mode .collaborate-content p,
+.dark-mode .contact-info p {
+  color: #ccc;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background: rgba(50, 50, 50, 0.9);
+  border-color: #bb86fc;
+}
+
+.dark-mode .collaborate-form button,
+.dark-mode .contact-form button {
+  background: #bb86fc;
+}
+
+.dark-mode .collaborate-form button:hover,
+.dark-mode .contact-form button:hover {
+  background: #ffb400;
+}
+
+/* Dark Mode for Team Section */
+.dark-mode .team-section {
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .team-section h1,
+.dark-mode .leadership h2,
+.dark-mode .heads h2,
+.dark-mode .dept-group h3,
+.dark-mode .leadership-card h3,
+.dark-mode .member-card h4 {
+  color: #bb86fc; /* Soft lavender shade for headings */
+}
+
+.dark-mode .intro-text,
+.dark-mode .leadership-card p,
+.dark-mode .member-card p {
+  color: #ccc;
+}
+
+.dark-mode .leadership-card,
+.dark-mode .member-card {
+  background: rgba(50, 50, 50, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .member-img {
+  border-color: #ffb400; /* Keep gold accent on profile pics */
+}
