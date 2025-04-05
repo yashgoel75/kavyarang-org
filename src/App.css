@@ -882,8 +882,8 @@ HEADER .header-title {
   }
 }
 /* Dropdown Menu */
-.dark-mode .dropdown-menu .dropdown {
-  background: rgba(60, 40, 80, 0.95);
+.dark-mode .dropdown-menu {
+  background-color: rgba(60, 40, 80, 0.95);
 }
 
 /* Cards and Sections */
