@@ -10,7 +10,7 @@ import head1Img from "./management1.jpg";
 import head2Img from "./management2.jpg";
 import creative1Img from "./creative1.png";
 import creative2Img from "./creative2.jpg";
-import socialImg from "./social.jpg";
+import socialImg from "./social1.png";
 
 function Team() {
   return (
@@ -31,11 +31,7 @@ function Team() {
             <p>Faculty Coordinator</p>
           </div>
           <div className="member-card leadership-card">
-            <img
-              src={faculty2}
-              alt="faculty2"
-              className="member-img"
-            />
+            <img src={faculty2} alt="faculty2" className="member-img" />
             <h3>Dr. Deepika Kumari</h3>
             <p>Faculty Coordinator</p>
           </div>
