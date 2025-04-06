@@ -17,6 +17,7 @@ import AboutUs from "./AboutUs";
 import Events from "./Events";
 
 import logo from "./kavyarang-logo.png";
+import alternate from "./Kavyarang favicon.png";
 import linkedin from "./linkedin-icon.png";
 import instagram from "./instagram-icon.png";
 import member1 from "./member1.jpg";
@@ -335,7 +336,7 @@ function App() {
                       </div>
                       <div className="member-card">
                         <img
-                          src={member3}
+                          src={alternate}
                           alt="Founder 3"
                           className="member-img"
                         />
@@ -344,7 +345,7 @@ function App() {
                       </div>
                       <div className="member-card">
                         <img
-                          src={logo}
+                          src={alternate}
                           alt="Founder 4"
                           className="member-img"
                         />
