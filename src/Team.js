@@ -30,11 +30,6 @@ function Team() {
             <h3>Dr. Nikita Sharma</h3>
             <p>Faculty Coordinator</p>
           </div>
-          <div className="member-card leadership-card">
-            <img src={faculty2} alt="faculty2" className="member-img" />
-            <h3>Dr. Deepika Kumari</h3>
-            <p>Faculty Coordinator</p>
-          </div>
         </div>
       </div>
 
