@@ -2,6 +2,8 @@ import React from "react";
 import "./Team.css";
 import logo from "./kavyarang-logo.png";
 
+import faculty1 from "./faculty1.png";
+import faculty2 from "./faculty2.png";
 import presidentImg from "./president1.jpg";
 import vicePresidentImg from "./VicePresident1.jpg";
 import head1Img from "./management1.jpg";
@@ -18,6 +20,27 @@ function Team() {
         The heartbeat of KavyaRang — a symphony of talent, passion, and literary
         brilliance.
       </p>
+
+      {/* Faculty Coordinator Section */}
+      <div className="leadership">
+        <h2>Faculty Coordinator</h2>
+        <div className="leadership-container">
+          <div className="member-card leadership-card">
+            <img src={faculty1} alt="faculty1" className="member-img" />
+            <h3>Dr. Nikita Sharma</h3>
+            <p>Faculty Coordinator</p>
+          </div>
+          <div className="member-card leadership-card">
+            <img
+              src={faculty2}
+              alt="faculty2"
+              className="member-img"
+            />
+            <h3>Dr. Deepika Kumari</h3>
+            <p>Faculty Coordinator</p>
+          </div>
+        </div>
+      </div>
 
       {/* Leadership Section */}
       <div className="leadership">
