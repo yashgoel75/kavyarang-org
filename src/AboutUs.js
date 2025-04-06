@@ -4,6 +4,7 @@ import founder1 from "./member1.jpg";
 import founder2 from "./member2.jpg";
 import founder3 from "./member3.jpg";
 import logo from "./kavyarang-logo.png";
+import alternate from "./Kavyarang favicon.png";
 import founder4 from "./member1.jpg";
 
 function AboutUs() {
@@ -46,11 +47,11 @@ function AboutUs() {
             <h3>Vaibhav Wadhwa</h3>
           </div>
           <div className="founder-card">
-            <img src={founder3} alt="Hadis Khan" className="founder-img" />
+            <img src={alternate} alt="Hadis Khan" className="founder-img" />
             <h3>Hadis Khan</h3>
           </div>
           <div className="founder-card">
-            <img src={logo} alt="Yatharth" className="founder-img" />
+            <img src={alternate} alt="Yatharth" className="founder-img" />
             <h3>Yatharth</h3>
           </div>
         </div>
