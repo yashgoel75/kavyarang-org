@@ -25,7 +25,7 @@ import member2 from "./member2.jpg";
 import member3 from "./member3.jpg";
 import slide1 from "./_DSC4830.JPG";
 import slide2 from "./_DSC4822.JPG";
-import slide3 from "./IMG_3399.png";
+import slide3 from "./IMG_3382.png";
 import slide4 from "./IMG-20240911-WA0043.jpg";
 
 // ScrollToTop Component
