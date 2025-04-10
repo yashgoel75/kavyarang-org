@@ -11,6 +11,41 @@ function Events() {
         creativity, forge connections, and celebrate the magic of words.
       </p>
 
+      {/* Upcoming Event: Open Mic - Left */}
+      <div className="centered-heading">
+        <h2>Upcoming Event: SRIJAN x Kavyarang Open Mic</h2>
+        </div>
+      <div className="event-container left">
+        <div className="event-text">
+
+          <p className="event-date">11th April 2025 | Block C, VIPS-TC</p>
+          <p>
+            Where words meet passion! SRIJAN – The SDG Society of VSET, in
+            collaboration with Kavyarang – The Literary Society of VSET, brings
+            you an unforgettable Open Mic experience! Whether it’s poetry,
+            storytelling, or spoken word—step up and let your voice be heard!
+          </p>
+          <p>
+            <strong>Register now:</strong>{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdzGkgCGIomivJlRkkzYZH3y9ObMFFAFd2oUFxF_pkDmUKo6w/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click here
+            </a>{" "}
+          </p>
+          <p>#OpenMicVSET #SrijanXKavyarang #VIPS #PoetryAndPassion #SpeakYourHeart #VSETVoices</p>
+        </div>
+      </div>
+
+      {/* Past Events Section */}
+      
+      <div className="centered-heading">
+        <h2>Past Events</h2>
+        </div>
+
+
       {/* World Poetry Day - Left */}
       <div className="event-container left">
         <div className="event-text">
