@@ -18,7 +18,7 @@ function Events() {
       <div className="event-container left">
         <div className="event-text">
 
-          <p className="event-date">11th April 2025 | Block C, VIPS-TC</p>
+          <p className="event-date">11th April 2025 | Block C, VIPS-TC | 12:00 PM</p>
           <p>
             Where words meet passion! SRIJAN – The SDG Society of VSET, in
             collaboration with Kavyarang – The Literary Society of VSET, brings
