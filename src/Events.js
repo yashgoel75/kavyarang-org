@@ -12,39 +12,44 @@ function Events() {
       </p>
 
       {/* Upcoming Event: Open Mic - Left */}
-      <div className="centered-heading">
-        <h2>Upcoming Event: SRIJAN x Kavyarang Open Mic</h2>
+      <div className="event-text">
+        <div className="centered-heading">
+          <h2>Upcoming Events</h2>
         </div>
+      </div>
       <div className="event-container left">
         <div className="event-text">
+          <p className="event-date">Exciting plans are in the works!</p>
+        </div>
+      </div>
 
-          <p className="event-date">11th April 2025 | Block C, VIPS-TC | 12:00 PM</p>
+      <div className="event-container left">
+        <div className="event-text">
+          <div className="centered-heading">
+            <h2>Past Events</h2>
+          </div>
+          <h2>National Safe Motherhood Day</h2>
+
+          <p className="event-date">11th April 2025</p>
           <p>
-            Where words meet passion! SRIJAN – The SDG Society of VSET, in
-            collaboration with Kavyarang – The Literary Society of VSET, brings
-            you an unforgettable Open Mic experience! Whether it’s poetry,
-            storytelling, or spoken word—step up and let your voice be heard!
+            On the occasion of National Safe Motherhood Day, SRIJAN – The SDG
+            Society of VSET, in collaboration with Kavyarang – The Literary
+            Society, hosted a heartfelt and vibrant <strong>Open Mic</strong>{" "}
+            event. Held in an intimate and welcoming setting, the event
+            encouraged students to step up and share their thoughts through
+            poetry, storytelling, and spoken word. With 10 passionate
+            participants, the stage became a space for raw emotions and powerful
+            voices. Each performance was a moving tribute to motherhood, women’s
+            safety, and the strength of womanhood. From personal experiences to
+            creative expressions, the speakers left the audience touched and
+            inspired. The event not only celebrated the art of expression but
+            also emphasized the need for awareness and empathy toward women’s
+            well-being in today’s society.
           </p>
-          <p>
-            <strong>Register now:</strong>{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdzGkgCGIomivJlRkkzYZH3y9ObMFFAFd2oUFxF_pkDmUKo6w/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here
-            </a>{" "}
-          </p>
-          <p>#OpenMicVSET #SrijanXKavyarang #VIPS #PoetryAndPassion #SpeakYourHeart #VSETVoices</p>
         </div>
       </div>
 
       {/* Past Events Section */}
-      
-      <div className="centered-heading">
-        <h2>Past Events</h2>
-        </div>
-
 
       {/* World Poetry Day - Left */}
       <div className="event-container left">
